@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopbanhangdientu.com</title>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
+    crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="./index.html"><img src="./img/logo.png"></a>
+        </div>
+        <div class="menu">
+            <li><a href="./category.html">NỮ</a>
+                <ul class="sub-menu">
+                    <li><a href="">Hàng nữ mới về</a></li>
+                    <li><a href="">Tom & Jerry Collection</a></li>
+                    <li><a href="">ÁO</a>
+                        <ul>
+                            <li><a href="">Áo sơ mi nữ</a></li>
+                            <li><a href="">Áo thun nữ</a></li>
+                            <li><a href="">Áo vest nữ</a></li>
+                            <li><a href="">Áo khoác nữ</a></li>
+                            <li><a href="">Áo len nữ</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">QUẦN</a>
+                        <ul>
+                            <li><a href="">Quần jean nữ</a></li>
+                            <li><a href="">Quần lửng/short nữ</a></li>
+                            <li><a href="">Quần dài nữ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="">NAM</a>
+                <ul class="sub-menu">
+                    <li><a href="">Hàng nam mới về</a></li>
+                    <li><a href="">New polo for men</a></li>
+                    <li><a href="">ÁO</a>
+                        <ul>
+                            <li><a href="">Áo sơ mi nam</a></li>
+                            <li><a href="">Áo polo nam</a></li>
+                            <li><a href="">Áo vest nam</a></li>
+                            <li><a href="">Áo khoác nam</a></li>
+                            <li><a href="">Áo len nam</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">QUẦN</a>
+                        <ul>
+                            <li><a href="">Quần jean nam</a></li>
+                            <li><a href="">Quần lửng/short nam</a></li>
+                            <li><a href="">Quần dài nam</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="">TRẺ EM</a></li>
+            <li><a href="">SALE</a></li>
+            <li><a href="">KHẨU TRANG</a></li>
+            <li><a href="">BST</a></li>
+            <li><a href="">THÔNG TIN</a></li>
+        </div>
+        <div class="other">
+            <li><input placeholder="Tìm kiếm" type="text"><i class="fas fa-search"></i></li>
+            <li><a class="fa fa-paw" href=""></a></li>
+            <li><a class="fa fa-user" href=""></a></li>
+            <li><a class="fa fa-shopping-bag" href=""></a></li>
+        </div>
+    </header>
+    <!-- Slider -->
+    <section id="Slider">
+        <div class="aspect-ratio-169">
+            <img src="img/1.jpg">
+            <img src="img/2.jpg">
+            <img src="img/3.jpg">
+            <img src="img/4.jpg">
+        </div>
+        <div class="dot-container">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+
+    </section>
+    <!-- app-container -->
+    <section class="app-container">
+        <p>Tải ứng dụng IVY moda</p>
+        <div class="app-google">
+            <img src="./img/appstore.jpg" alt="">
+            <img src="./img/googleplay.jpg" alt="">
+        </div>
+        <p>Nhận bản tin IVY moda</p>
+        <input type="text" placeholder="Nhập email của bạn...">
+    </section>
+    <!-- Footer -->
+    <div class="footer-top">
+        <li><a href=""><img src="./img/dathongbao.png"></a></li>
+        <li><a href=""></a>Liên hệ</li>
+        <li><a href=""></a>Tuyển dụng</li>
+        <li><a href=""></a>Giới thiệu</li>
+        <li>
+            <a href="" class="fab fa-facebook"></a>
+            <a href="" class="fab fa-twitter"></a>
+            <a href="" class="fab fa-youtube"></a>
+        </li>
+    </div>
+    <p class="text-bottom">
+        Công ty Cổ phần Dự Kim với số đăng ký kinh doanh: 0105777650 <br>
+    Địa chỉ đăng ký: Tổ dân phố Tháp, P.Đại Mỗ, Q.Nam Từ Liêm, TP.Hà Nội, Việt Nam - 0243 205 2222<br>
+        Đặt hàng online : <span>0246 662 3434</span>  .
+    </p>
+    <div class="footer-bottom">
+        <p>©Ivymoda All rights reserved</p>
+    </div>
+
+</body>
+<script>
+    //bắt sự kiện
+    const header = document.querySelector("header")
+    window.addEventListener("scroll",function(){
+        x = window.pageYOffset
+        if(x > 0){
+            header.classList.add("sticky")
+        }
+        else{
+            header.classList.remove("sticky")
+        }
+    })
+
+
+    //làm ảnh chuyển động
+    const imgPosition = document.querySelectorAll(".aspect-ratio-169 img")
+    const imgContainer = document.querySelector('.aspect-ratio-169')
+    const dotItem = document.querySelectorAll(".dot")
+    let imgNumber = imgPosition.length
+    let index = 0;
+    //console.log(imgPosition); để gọi các hình ảnh ra
+    imgPosition.forEach(function(image,index){
+        image.style.left = index*100 + "%"
+        dotItem[index].addEventListener("click",function(){
+            slider(index)
+        })
+    })
+    function imgSlide (){
+        index++;
+        console.log(index)
+        if(index >= imgNumber){index = 0}
+        slider(index)
+    }
+    function slider (index){
+        imgContainer.style.left = "-" +index*100+ "%"
+        const dotActive = document.querySelector('.active')//gọi class active
+        dotActive.classList.remove("active")//xóa các active cũ
+        dotItem[index].classList.add("active")// gọi các active m
+    }
+
+    setInterval(imgSlide,4000)
+</script>
+</html>
